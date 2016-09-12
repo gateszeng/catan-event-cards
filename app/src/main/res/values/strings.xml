@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">CatanCards</string>
+    <string name="normal_title"></string>
+    <string name="calm_title">Calm Seas</string>
+    <string name="neighborly_title">Neighborly Assistance</string>
+    <string name="epidemic_title">Epidemic</string>
+    <string name="earthquake_title">Earthquake</string>
+    <string name="good_title">Good Neighbors</string>
+    <string name="trade_title">Trade Advantage</string>
+    <string name="tournament_title">Tournament</string>
+    <string name="conflict_title">Conflict</string>
+    <string name="plentiful_title">Plentiful Year</string>
+    <string name="robberatck_title">Robber Attacks!</string>
+    <string name="robberflee_title">Robber Flees!</string>
+    <string name="newyear_title">New Year</string>
+
+    <string name="normal_desc">The settlers labor. Catan prospers!</string>
+    <string name="calm_desc">The player(s) with the most harbors receives 1 resource card of his choice.</string>
+    <string name="neighborly_desc">The player(s) with the most victory points give(s) each player with fewer victory points 1 resource card of his choice. If you don\'t have enough resources to give each eligible player 1 resource, you give no resources.</string>
+    <string name="epidemic_desc">Each player receives only 1 resource for each of his cities that produces this turn.</string>
+    <string name="earthquake_desc">Each player turns 1 (maximum) of his roads sideways.\nYou may not build roads until your turned road is repaired. The repairs cost 1 lumber and 1 brick.\nRoads turned sideways are still counted towards the "Longest Road".</string>
+    <string name="good_desc">Each player gives the player to his left 1 resource of the giver\'s choice (if he has one).</string>
+    <string name="trade_desc">The player with the "Longest Road" card (if not claimed, the player with more roads than any other player) may take one resource card from any player. You may not take a development card.</string>
+    <string name="tournament_desc">The player(s) with the most soldier cards revealed takes 1 resource of his choice from the bank.</string>
+    <string name="conflict_desc">The player with the "Largest Army" card (if not claimed, each player with the most soldier cards) takes 1 resource card at random from any one player.</string>
+    <string name="plentiful_desc">Each player may take 1 resource of his choice.</string>
+    <string name="robberatck_desc">1. Each player with more than 7 cards must discard half (rounded down).\n2. Move the robber. Draw a random resource card from any 1 player with a settlement and/or city next to the robber\'s new hex.</string>
+    <string name="robberflee_desc">The robber returns to the desert. Do not draw a card from any player.</string>
+    <string name="newyear_desc">1. Shuffle all the event cards (except this card).\n2. Put 5 event cards face-down and place this card on top.\n3. Place the remaining 31 event cards face-down on top of this card to form a new draw pile.\n4. Draw the top card to begin the turn.</string>
+
+</resources>
