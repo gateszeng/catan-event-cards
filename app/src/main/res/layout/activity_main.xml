@@ -8,10 +8,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:layout_margin="@dimen/activity_vertical_spacing"
+    android:background="@color/black"
     tools:context="com.example.gates.catancards.MainActivity">
 
     <TextView
         android:id="@+id/card_title"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Card Title"
@@ -22,6 +24,7 @@
 
     <TextView
         android:id="@+id/card_number"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="#"
@@ -37,6 +40,7 @@
         android:layout_centerHorizontal="false">
         <TextView
             android:id="@+id/card_desc"
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Card Description"
@@ -50,6 +54,7 @@
         android:layout_alignParentBottom="true">
         <TextView
             android:id="@+id/card_count"
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="#"
