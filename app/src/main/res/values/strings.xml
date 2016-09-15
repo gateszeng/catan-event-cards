@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">CatanCards</string>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
     <string name="normal_title"></string>
     <string name="calm_title">Calm Seas</string>
     <string name="neighborly_title">Neighborly Assistance</string>
