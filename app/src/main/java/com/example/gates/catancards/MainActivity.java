@@ -25,16 +25,15 @@ public class MainActivity extends AppCompatActivity {
         countText = (TextView) this.findViewById(R.id.card_count);
 
         deck = new Deck();
-        drawCard();
+        updateViews(deck.nextCard());
     }
 
-    public void switchCards(View view) {
-        drawCard();
+    public void forwardCard(View view) {
+        updateViews(deck.nextCard());
     }
 
-    public void drawCard() {
-        card = deck.nextCard();
-        updateViews(card);
+    public void previousCard(View view) {
+        updateViews(deck.prevCard());
     }
 
     public void updateViews(Card currCard) {

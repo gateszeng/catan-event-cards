@@ -87,42 +87,65 @@ public class Deck {
         eventCards.add(new Card(11, NEIGHBORLY));
         eventCards.add(new Card(11, NORMAL));
         eventCards.add(new Card(12, CALM));
+        shuffle();
     }
 
-    /*
+    /**
      * public void clearDeck()
      *
-     * Clears the deck completely
+     * clears the deck completely
      */
     public void clearDeck() {
         eventCards.clear();
         counter = 0;
     }
 
-    /*
+    /**
+     * public void shuffle()
+     *
+     * shuffles the deck
+     * }
+     */
+    public void shuffle() {
+        // goes through each card and finds a random location to put the card
+        for (int i = 0; i < eventCards.size(); i++) {
+            Card currCard = eventCards.get(i);
+            int randIndex = rand.nextInt(eventCards.size());
+            eventCards.remove(i);
+            eventCards.add(randIndex, currCard);
+        }
+
+    }
+
+    /**
      * nextCard()
      *
-     * Draws the next card
+     * draws the next card
      */
     public Card nextCard() {
-        int currIndex;
-        Card currCard;
-        if (counter >= MAX_CARD_COUNT) {
+        if (counter > MAX_CARD_COUNT) {
             clearDeck();
             createDeck();
             return new Card(0, NEWYEAR);
         }
-/*        else if (counter > MAX_CARD_COUNT) {
-            clearDeck();
-            createDeck();
-        }
-        */
-        counter++;
-        currIndex = rand.nextInt(eventCards.size());
-        currCard = eventCards.get(currIndex);
-        eventCards.remove(currIndex);
-        return currCard;
+        return eventCards.get(++counter);
     }
+
+    /*
+     * prevCard()
+     *
+     * Draws the previous card
+     */
+
+    public Card prevCard() {
+        if (--counter > 0) {
+            return eventCards.get(counter);
+        }
+        counter = 1;
+        return eventCards.get(1);
+    }
+
+
 
     public int getCount() {
         return counter;
